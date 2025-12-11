@@ -35,7 +35,7 @@ A carefully structured loop manages input polling, game-state updates, and rende
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yashp1932/DSA-Snake-Game.git
+git clone https://github.com/ishpreet-bal/DSA-Snake-Game.git
 ```
 
 ### 2. Enter the project folder:
