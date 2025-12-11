@@ -1,56 +1,51 @@
-Multiplayer Snake Game Using DSA (C++) 🐍
+# Multiplayer Snake Game Using DSA (C++) 🐉
 
-This project recreates the classic Snake experience in C++ with support for two players. The core mechanics are built around fundamental data-structure and algorithm principles to ensure smooth, efficient gameplay.
+A modern take on the classic Snake game, implemented in C++ with full support for two-player gameplay. The mechanics are built around core data structures and algorithms to ensure smooth movement, clean logic, and responsive controls.
 
-Key Highlights ✨
+## Key Highlights ⭐
 
-Simultaneous two-player gameplay with separate control schemes
+- Two players can play at the same time with separate control sets  
+- Real-time snake motion with reliable collision handling  
+- Snakes grow as they eat food that appears at random positions  
+- Console-based interface for lightweight execution and easy portability  
 
-Continuous movement handling and robust collision logic
+## Data Structures & Algorithms Used 🧠
 
-Growing snakes and randomly positioned food items
+### Linked Lists
+Each snake's body is represented as a linked list, allowing efficient growth and segment updates during movement.
 
-Runs entirely in the console for fast performance and easy portability
+### Queues
+Used to maintain and update the order of snake segments for seamless directional changes.
 
-DSA Concepts Applied 📚
+### Collision Detection
+Coordinate comparisons ensure snakes cannot pass through walls, themselves, or each other.
 
-Linked Lists: Each snake’s body is stored as a linked list, enabling fast insertion and removal of segments as it moves or grows
+### Random Generation
+Food spawns at random valid coordinates using pseudo-random number generation.
 
-Queues: Used to maintain the order of body segments for consistent movement updates
+### Game Loop
+A carefully structured loop manages input polling, game-state updates, and rendering.
 
-Collision Logic: Coordinate-based checks prevent snakes from running into walls, themselves, or each other
+## Player Controls 🎯
 
-Random Number Generation: Determines valid, non-occupied positions for food placement
+- **Player 1:** `W` / `A` / `S` / `D`  
+- **Player 2:** Arrow Keys (↑ ↓ ← →)
 
-Game Loop Design: Combines input handling, state transitions, and screen rendering into a streamlined loop
+## Build & Run Instructions 🛠️
 
-Player Controls 🎮
+### 1. Clone the repository:
+```bash
+git clone https://github.com/yashp1932/DSA-Snake-Game.git
 
-Player 1: W / A / S / D
-
-Player 2: Arrow keys
-
-Build & Run Instructions ⚙️
-
-Grab the repository:
-
-git clone https://github.com/ishpreet-bal/DSA-Snake-Game.git
-
-
-Open the project directory:
-
+2. Enter the project folder:
 cd DSA-Snake-Game
 
-
-Compile:
-
+3. Compile the game:
 g++ -o snake_game main.cpp
 
-
-Start the game:
-
+4. Run the executable:
 ./snake_game
 
-How It Plays 🕹️
+Gameplay Overview 🎮
 
-Guide your snake toward food to extend its length, but avoid hitting boundaries, yourself, or the other player’s snake. The match ends when a collision occurs—perfect for competitive or casual play.
+Control your snake, eat food to grow, and avoid collisions with walls, yourself, or the other player's snake. The game ends when a collision occurs—making it great for quick, competitive matches or casual play.
