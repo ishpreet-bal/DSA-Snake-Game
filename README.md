@@ -36,16 +36,22 @@ A carefully structured loop manages input polling, game-state updates, and rende
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/yashp1932/DSA-Snake-Game.git
+```
 
-2. Enter the project folder:
+### 2. Enter the project folder:
+```bash
 cd DSA-Snake-Game
+```
 
-3. Compile the game:
+### 3. Compile the game:
+```bash
 g++ -o snake_game main.cpp
-
+```
 4. Run the executable:
+```bash
 ./snake_game
+```
 
-Gameplay Overview 🎮
+## Gameplay Overview 🎮
 
 Control your snake, eat food to grow, and avoid collisions with walls, yourself, or the other player's snake. The game ends when a collision occurs—making it great for quick, competitive matches or casual play.
